@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TwitchExtensionPushTester.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Secret" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ENTER TWITCH SECRET HERE</Value>
+    </Setting>
+    <Setting Name="ClientId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ENTER TWITCH CLIENT ID HERE</Value>
+    </Setting>
+    <Setting Name="Channel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ENTER CHANNEL TWITCH ID HERE</Value>
+    </Setting>
+    <Setting Name="Payload" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ENTER PAYLOAD HERE</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
