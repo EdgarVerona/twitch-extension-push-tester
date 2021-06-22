@@ -31,7 +31,6 @@ namespace TwitchExtensionPushTester
 			txtChannelId.Text = Properties.Settings.Default.Channel;
 			txtSecret.Text = Properties.Settings.Default.Secret;
 			txtPayload.Text = Properties.Settings.Default.Payload;
-			HttpClient.DefaultProxy = new WebProxy("http://localhost:8888");
 		}
 
 		public class PubsubPerms
@@ -72,6 +71,15 @@ namespace TwitchExtensionPushTester
 
 		private void btnExecut_Click(object sender, EventArgs e)
 		{
+			if (string.IsNullOrEmpty(txtProxy.Text))
+			{
+				HttpClient.DefaultProxy = new WebProxy();
+			}
+			else
+			{
+				HttpClient.DefaultProxy = new WebProxy(txtProxy.Text);
+			}
+
 			Properties.Settings.Default.ClientId = txtClientId.Text;
 			Properties.Settings.Default.Channel = txtChannelId.Text;
 			Properties.Settings.Default.Secret = txtSecret.Text;

@@ -44,6 +44,8 @@ namespace TwitchExtensionPushTester
 			this.txtResponse = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.txtClientId = new System.Windows.Forms.TextBox();
+			this.label8 = new System.Windows.Forms.Label();
+			this.txtProxy = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// txtChannelId
@@ -183,11 +185,30 @@ namespace TwitchExtensionPushTester
 			this.txtClientId.Size = new System.Drawing.Size(266, 23);
 			this.txtClientId.TabIndex = 2;
 			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Location = new System.Drawing.Point(692, 15);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(130, 15);
+			this.label8.TabIndex = 16;
+			this.label8.Text = "Proxy Server (optional):";
+			// 
+			// txtProxy
+			// 
+			this.txtProxy.Location = new System.Drawing.Point(828, 12);
+			this.txtProxy.MaxLength = 15;
+			this.txtProxy.Name = "txtProxy";
+			this.txtProxy.Size = new System.Drawing.Size(203, 23);
+			this.txtProxy.TabIndex = 15;
+			// 
 			// frmMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1044, 755);
+			this.Controls.Add(this.label8);
+			this.Controls.Add(this.txtProxy);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.txtClientId);
 			this.Controls.Add(this.label6);
@@ -228,6 +249,8 @@ namespace TwitchExtensionPushTester
 		private System.Windows.Forms.TextBox txtResponse;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.TextBox txtClientId;
+		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.TextBox txtProxy;
 	}
 }
 
