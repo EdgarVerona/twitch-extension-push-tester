@@ -12,7 +12,7 @@ namespace TwitchExtensionPushTester.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -68,6 +68,78 @@ namespace TwitchExtensionPushTester.Properties {
             }
             set {
                 this["Payload"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ENTER EBS ENDPOINT URL HERE")]
+        public string EbsUrl {
+            get {
+                return ((string)(this["EbsUrl"]));
+            }
+            set {
+                this["EbsUrl"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("GET")]
+        public string EbsVerb {
+            get {
+                return ((string)(this["EbsVerb"]));
+            }
+            set {
+                this["EbsVerb"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ENTER POST BODY HERE, OR BLANK IF N/A")]
+        public string EbsPostBody {
+            get {
+                return ((string)(this["EbsPostBody"]));
+            }
+            set {
+                this["EbsPostBody"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Proxy {
+            get {
+                return ((string)(this["Proxy"]));
+            }
+            set {
+                this["Proxy"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("true")]
+        public string EbsIsAuthenticated {
+            get {
+                return ((string)(this["EbsIsAuthenticated"]));
+            }
+            set {
+                this["EbsIsAuthenticated"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ENTER USER TWITCH ID HERE")]
+        public string EbsUserId {
+            get {
+                return ((string)(this["EbsUserId"]));
+            }
+            set {
+                this["EbsUserId"] = value;
             }
         }
     }

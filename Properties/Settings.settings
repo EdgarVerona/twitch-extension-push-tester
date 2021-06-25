@@ -14,5 +14,23 @@
     <Setting Name="Payload" Type="System.String" Scope="User">
       <Value Profile="(Default)">ENTER PAYLOAD HERE</Value>
     </Setting>
+    <Setting Name="EbsUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ENTER EBS ENDPOINT URL HERE</Value>
+    </Setting>
+    <Setting Name="EbsVerb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">GET</Value>
+    </Setting>
+    <Setting Name="EbsPostBody" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ENTER POST BODY HERE, OR BLANK IF N/A</Value>
+    </Setting>
+    <Setting Name="Proxy" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EbsIsAuthenticated" Type="System.String" Scope="User">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
+    <Setting Name="EbsUserId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ENTER USER TWITCH ID HERE</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

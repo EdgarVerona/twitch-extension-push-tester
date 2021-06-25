@@ -57,4 +57,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label10.Text" xml:space="preserve">
+    <value>This tab allows you to send requests to your Twitch EBS.
+While it will generate a JWT for you and correctly set your headers, you will need to make sure your URL, Verb, and Post Body if applicable are correct.</value>
+  </data>
 </root>
