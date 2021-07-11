@@ -150,7 +150,7 @@ namespace TwitchExtensionPushTester
 		{
 			var encoder = new JwtEncoder(new HMACSHA256Algorithm(), new JsonNetSerializer(), new JwtBase64UrlEncoder());
 
-			string jwt = encoder.Encode(message, Convert.FromBase64String(txtSecret.Text.Trim()));
+			string jwt = encoder.Encode(message, txtSecret.Text.Trim());
 			return jwt;
 		}
 
